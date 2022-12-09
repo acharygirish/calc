@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <script src="https://kit.fontawesome.com/ccd306c63a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form class="calculator" name="calc">
+            <input type="text" class="equat" readonly>
+            <input type="text" class="value" value="0">
+            <span class="num clear" onclick="clearInput()"><i>C</i></span>
+            <span class="num btn-history" onclick="showHistory()"><i>H</i></span>
+            <span class="num" onclick="selectValue('/')"><i>/</i></span>
+            <span class="num" onclick="selectValue('7')"><i>7</i></span>
+            <span class="num" onclick="selectValue('8')"><i>8</i></span>
+            <span class="num" onclick="selectValue('9')"><i>9</i></span>
+            <span class="num" onclick="selectValue('*')"><i>*</i></span>
+            <span class="num" onclick="selectValue('4')"><i>4</i></span>
+            <span class="num" onclick="selectValue('5')"><i>5</i></span>
+            <span class="num" onclick="selectValue('6')"><i>6</i></span>
+            <span class="num" onclick="selectValue('-')"><i>-</i></span>
+            <span class="num" onclick="selectValue('1')"><i>1</i></span>
+            <span class="num" onclick="selectValue('2')"><i>2</i></span>
+            <span class="num" onclick="selectValue('3')"><i>3</i></span>
+            <span class="num plus" onclick="selectValue('+')"><i>+</i></span>
+            <span class="num" onclick="selectValue('0')"><i>0</i></span>
+            <span class="num" onclick="selectValue('00')"><i>00</i></span>
+            <span class="num" onclick="selectValue('.')"><i>.</i></span>
+            <span class="num equal" onclick="getAns()"><i>=</i></span>
+        </form>
+    </div>
+    <div class="history">
+        <div class="history-header">
+            <h2>History</h2>
+            <div class="btn-remove" onclick="removeHistory()"><i class="fas fa-trash-alt"></i></div>
+        </div>
+        <div class="history-div"></div>
+    </div>
+    <script src="js/calc.js"></script>
+</body>
+</html>
